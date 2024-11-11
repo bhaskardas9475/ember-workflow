@@ -1,0 +1,8 @@
+{{!-- app/templates/workflow.hbs --}}
+<div class="workflowRules">
+    {{#if this.isLoaded}}
+        <div class="graph-canvas">
+            <RecursiveNode @node={{this.fdata.rootNode}} @add={{this.addNode}} />
+        </div>
+    {{/if}}
+</div>

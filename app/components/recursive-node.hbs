@@ -1,0 +1,36 @@
+<div class="graph-vertical">
+  <div class="bubble">{{@node.type}} {{@node.id}}</div>
+  
+  <div class="multiColumnDownArrows">
+    <div class="multiSegment first">
+      <div class="multiUpperLine"></div>
+      <div class="plusMenuButton">
+        <div class="flyoutTarget dropdown">
+          <button class="button flyoutButton" type="button">+</button>
+          <div class="dropdown-content">
+            <a href="#">Add an Action</a>
+            <a href="#">Add an Condition</a>
+            <a href="#" {{on "click" (fn @add @node.id)}}>Add an Condition Path</a>
+          </div>
+        </div>
+      </div>
+      <div class="multiLowerLine"></div>
+      <div class="arrowTip"></div>
+    </div>
+    {{#if (gt this.findMaxNode.length 1)}}
+      {{#each this.findMaxNode as |element|}}
+        {{render-span-pattern element}}
+      {{/each}}
+    {{/if}}
+  </div>
+
+  <div class="graph-horizontal">
+    {{#each @node.childNode.conditionNodes as |childNode index|}}
+      <RecursiveNode @node={{childNode}} @add={{@add}} @data-node-id={{childNode.id}} />
+    {{/each}}
+  </div>
+
+  {{#if @node.childNode.action}}
+    <div class="bubble">{{@node.childNode.type}}</div>
+  {{/if}}
+</div>

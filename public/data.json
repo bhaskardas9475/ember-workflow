@@ -1,0 +1,589 @@
+{
+    "id": 216573547,
+    "rootNode": {
+      "childNode": {
+        "type": "DmIfElseNode",
+        "id": 2,
+        "conditionNodes": [
+          {
+            "type": "DmConditionNode",
+            "id": 3,
+            "conditions": [
+              {
+                "columnID": 3009991204498,
+                "operator": 119,
+                "type": "oneValue_v1",
+                "values": [
+                  {
+                    "displayValue": "Details 1",
+                    "numericValue": null
+                  }
+                ]
+              }
+            ],
+            "logicalOperator": 0,
+            "childNode": {
+              "type": "DmIfElseNode",
+              "id": 4,
+              "conditionNodes": [
+                {
+                  "type": "DmConditionNode",
+                  "id": 5,
+                  "conditions": [
+                    {
+                      "columnID": 3009991204498,
+                      "operator": 119,
+                      "type": "oneValue_v1",
+                      "values": [
+                        {
+                          "displayValue": "Details 1",
+                          "numericValue": null
+                        }
+                      ]
+                    }
+                  ],
+                  "logicalOperator": 0,
+                  "childNode": {
+                    "action": {
+                      "type": "DmEmailRecipient_v1",
+                      "notificationCustomizationJson": "{\"version\":\"1\",\"fromCustomization\":{\"fromType\":\"AUTOMATION\"}}",
+                      "includeAttachments": true,
+                      "includeComments": true,
+                      "includeMessageOnly": false,
+                      "readOnlyRecipients": false,
+                      "recipients": [
+                        {
+                          "id": 147239951,
+                          "email": "bhaskar.das9476@gmail.com",
+                          "type": 2
+                        }
+                      ]
+                    },
+                    "id": 6,
+                    "type": "DmGeneralActionNode"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "type": "DmConditionNode",
+            "id": 7,
+            "conditions": [
+              {
+                "columnID": 3009991204500,
+                "operator": 119,
+                "type": "oneValue_v1",
+                "values": [
+                  {
+                    "displayValue": "",
+                    "numericValue": null
+                  }
+                ]
+              }
+            ],
+            "logicalOperator": 0,
+            "childNode": {
+              "type": "DmIfElseNode",
+              "id": 8,
+              "conditionNodes": [
+                {
+                  "type": "DmConditionNode",
+                  "id": 9,
+                  "conditions": [
+                    {
+                      "columnID": 3009991204498,
+                      "operator": 119,
+                      "type": "oneValue_v1",
+                      "values": [
+                        {
+                          "displayValue": "Details 1",
+                          "numericValue": null
+                        }
+                      ]
+                    }
+                  ],
+                  "logicalOperator": 0,
+                  "childNode": {
+                    "action": {
+                      "type": "DmEmailRecipient_v1",
+                      "notificationCustomizationJson": "{\"version\":\"1\",\"fromCustomization\":{\"fromType\":\"AUTOMATION\"}}",
+                      "includeAttachments": true,
+                      "includeComments": true,
+                      "includeMessageOnly": false,
+                      "readOnlyRecipients": false,
+                      "recipients": [
+                        {
+                          "id": 147239951,
+                          "email": "bhaskar.das9476@gmail.com",
+                          "type": 2
+                        }
+                      ]
+                    },
+                    "id": 10,
+                    "type": "DmGeneralActionNode"
+                  }
+                },
+                {
+                  "type": "DmConditionNode",
+                  "id": 20,
+                  "conditions": [
+                    {
+                      "columnID": 3009991204498,
+                      "operator": 119,
+                      "type": "oneValue_v1",
+                      "values": [
+                        {
+                          "displayValue": "",
+                          "numericValue": null
+                        }
+                      ]
+                    }
+                  ],
+                  "logicalOperator": 0,
+                  "childNode": {
+                    "type": "DmIfElseNode",
+                    "id": 21,
+                    "conditionNodes": [
+                      {
+                        "type": "DmConditionNode",
+                        "id": 22,
+                        "conditions": [
+                          {
+                            "columnID": 3009991204498,
+                            "operator": 119,
+                            "type": "oneValue_v1",
+                            "values": [
+                              {
+                                "displayValue": "",
+                                "numericValue": null
+                              }
+                            ]
+                          }
+                        ],
+                        "logicalOperator": 0,
+                        "childNode": {
+                          "action": {
+                            "type": "DmEmailRecipient_v1",
+                            "notificationCustomizationJson": "{\"version\":\"1\",\"fromCustomization\":{\"fromType\":\"AUTOMATION\"}}",
+                            "includeAttachments": true,
+                            "includeComments": true,
+                            "includeMessageOnly": false,
+                            "readOnlyRecipients": false,
+                            "recipients": [
+                              {
+                                "id": 147239951,
+                                "email": "bhaskar.das9476@gmail.com",
+                                "type": 2
+                              }
+                            ]
+                          },
+                          "id": 23,
+                          "type": "DmGeneralActionNode"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "DmConditionNode",
+                  "id": 23,
+                  "conditions": [
+                    {
+                      "columnID": 3009991204497,
+                      "operator": 119,
+                      "type": "oneValue_v1",
+                      "values": [
+                        {
+                          "displayValue": "Task 1"
+                        }
+                      ]
+                    }
+                  ],
+                  "logicalOperator": 0,
+                  "childNode": {
+                    "action": {
+                      "type": "DmEmailRecipient_v1",
+                      "notificationCustomizationJson": "{\"version\":\"1\",\"fromCustomization\":{\"fromType\":\"AUTOMATION\"}}",
+                      "notificationCustomizationJsonSanitized": "{\"version\":\"1\",\"fromCustomization\":{\"fromType\":\"AUTOMATION\"}}",
+                      "includeAttachments": true,
+                      "includeComments": true,
+                      "includeMessageOnly": false,
+                      "readOnlyRecipients": false,
+                      "recipients": [
+                        {
+                          "id": 147239951,
+                          "email": "bhaskar.das9476@gmail.com",
+                          "type": 2
+                        }
+                      ]
+                    },
+                    "id": null,
+                    "type": "DmGeneralActionNode",
+                    "childNode": {
+                      "type": "DmIfElseNode",
+                      "id": null,
+                      "conditionNodes": [
+                        {
+                          "type": "DmConditionNode",
+                          "id": null,
+                          "conditions": [
+                            {
+                              "columnID": 3009991204498,
+                              "operator": 119,
+                              "type": "oneValue_v1",
+                              "values": [
+                                {
+                                  "displayValue": "",
+                                  "numericValue": null
+                                }
+                              ]
+                            }
+                          ],
+                          "logicalOperator": 0,
+                          "childNode": {
+                            "type": "DmIfElseNode",
+                            "id": null,
+                            "conditionNodes": [
+                              {
+                                "type": "DmConditionNode",
+                                "id": null,
+                                "conditions": [
+                                  {
+                                    "columnID": 3009991204498,
+                                    "operator": 119,
+                                    "type": "oneValue_v1",
+                                    "values": [
+                                      {
+                                        "displayValue": "",
+                                        "numericValue": null
+                                      }
+                                    ]
+                                  }
+                                ],
+                                "logicalOperator": 0,
+                                "childNode": {
+                                  "action": {
+                                    "type": "DmEmailRecipient_v1",
+                                    "notificationCustomizationJson": "{\"version\":\"1\",\"fromCustomization\":{\"fromType\":\"AUTOMATION\"}}",
+                                    "notificationCustomizationJsonSanitized": "{\"version\":\"1\",\"fromCustomization\":{\"fromType\":\"AUTOMATION\"}}",
+                                    "includeAttachments": true,
+                                    "includeComments": true,
+                                    "includeMessageOnly": false,
+                                    "readOnlyRecipients": false,
+                                    "recipients": [
+                                      {
+                                        "id": 147239951,
+                                        "email": "bhaskar.das9476@gmail.com",
+                                        "type": 2
+                                      }
+                                    ]
+                                  },
+                                  "id": null,
+                                  "type": "DmGeneralActionNode"
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "type": "DmConditionNode",
+                          "id": null,
+                          "conditions": [
+                            {
+                              "columnID": 3009991204497,
+                              "operator": 119,
+                              "type": "oneValue_v1",
+                              "values": [
+                                {
+                                  "displayValue": "",
+                                  "numericValue": null
+                                }
+                              ]
+                            }
+                          ],
+                          "logicalOperator": 0,
+                          "childNode": {
+                            "action": {
+                              "type": "DmEmailRecipient_v1",
+                              "notificationCustomizationJson": "{\"version\":\"1\",\"fromCustomization\":{\"fromType\":\"AUTOMATION\"}}",
+                              "notificationCustomizationJsonSanitized": "{\"version\":\"1\",\"fromCustomization\":{\"fromType\":\"AUTOMATION\"}}",
+                              "includeAttachments": true,
+                              "includeComments": true,
+                              "includeMessageOnly": false,
+                              "readOnlyRecipients": false,
+                              "recipients": [
+                                {
+                                  "id": 147239951,
+                                  "email": "bhaskar.das9476@gmail.com",
+                                  "type": 2
+                                }
+                              ]
+                            },
+                            "id": null,
+                            "type": "DmGeneralActionNode"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              ],
+              "elseNode": {
+                "type": "DmElseNode",
+                "id": 11,
+                "childNode": {
+                  "action": {
+                    "type": "DmEmailRecipient_v1",
+                    "notificationCustomizationJson": "{\"version\":\"1\",\"fromCustomization\":{\"fromType\":\"AUTOMATION\"}}",
+                    "includeAttachments": true,
+                    "includeComments": true,
+                    "includeMessageOnly": false,
+                    "readOnlyRecipients": false,
+                    "recipients": [
+                      {
+                        "id": 147239951,
+                        "email": "bhaskar.das9476@gmail.com",
+                        "type": 2
+                      }
+                    ]
+                  },
+                  "id": 12,
+                  "type": "DmGeneralActionNode",
+                  "childNode": {
+                    "type": "DmIfElseNode",
+                    "id": 13,
+                    "conditionNodes": [
+                      {
+                        "type": "DmConditionNode",
+                        "id": 14,
+                        "conditions": [
+                          {
+                            "columnID": 3009991204498,
+                            "operator": 119,
+                            "type": "oneValue_v1",
+                            "values": [
+                              {
+                                "displayValue": "Details 1",
+                                "numericValue": null
+                              }
+                            ]
+                          }
+                        ],
+                        "logicalOperator": 0,
+                        "childNode": {
+                          "action": {
+                            "type": "DmEmailRecipient_v1",
+                            "notificationCustomizationJson": "{\"version\":\"1\",\"fromCustomization\":{\"fromType\":\"AUTOMATION\"}}",
+                            "includeAttachments": true,
+                            "includeComments": true,
+                            "includeMessageOnly": false,
+                            "readOnlyRecipients": false,
+                            "recipients": [
+                              {
+                                "id": 147239951,
+                                "email": "bhaskar.das9476@gmail.com",
+                                "type": 2
+                              }
+                            ]
+                          },
+                          "id": 15,
+                          "type": "DmGeneralActionNode"
+                        }
+                      },
+                      {
+                        "type": "DmConditionNode",
+                        "id": 16,
+                        "conditions": [
+                          {
+                            "columnID": 3009991204499,
+                            "operator": 119,
+                            "type": "oneValue_v1",
+                            "values": [
+                              {
+                                "displayValue": "Bhaskar Das",
+                                "numericValue": 147239951
+                              }
+                            ]
+                          }
+                        ],
+                        "logicalOperator": 0,
+                        "childNode": {
+                          "action": {
+                            "type": "DmEmailRecipient_v1",
+                            "notificationCustomizationJson": "{\"version\":\"1\",\"fromCustomization\":{\"fromType\":\"AUTOMATION\"}}",
+                            "includeAttachments": true,
+                            "includeComments": true,
+                            "includeMessageOnly": false,
+                            "readOnlyRecipients": false,
+                            "recipients": [
+                              {
+                                "id": 147239951,
+                                "email": "bhaskar.das9476@gmail.com",
+                                "type": 2
+                              }
+                            ]
+                          },
+                          "id": 17,
+                          "type": "DmGeneralActionNode"
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          {
+            "type": "DmConditionNode",
+            "id": 99,
+            "conditions": [
+              {
+                "columnID": 3009991204497,
+                "operator": 119,
+                "type": "oneValue_v1",
+                "values": [
+                  {
+                    "displayValue": "",
+                    "numericValue": null
+                  }
+                ]
+              }
+            ],
+            "logicalOperator": 0,
+            "childNode": {
+              "action": {
+                "type": "DmEmailRecipient_v1",
+                "notificationCustomizationJson": "{\"version\":\"1\",\"fromCustomization\":{\"fromType\":\"AUTOMATION\"}}",
+                "notificationCustomizationJsonSanitized": "{\"version\":\"1\",\"fromCustomization\":{\"fromType\":\"AUTOMATION\"}}",
+                "includeAttachments": true,
+                "includeComments": true,
+                "includeMessageOnly": false,
+                "readOnlyRecipients": false,
+                "recipients": [
+                  {
+                    "id": 147239951,
+                    "email": "bhaskar.das9476@gmail.com",
+                    "type": 2
+                  }
+                ]
+              },
+              "id": null,
+              "type": "DmGeneralActionNode"
+            }
+          },
+          {
+            "type": "DmConditionNode",
+            "id": 77,
+            "conditions": [
+              {
+                "columnID": 3009991204497,
+                "operator": 119,
+                "type": "oneValue_v1",
+                "values": [
+                  {
+                    "displayValue": "",
+                    "numericValue": null
+                  }
+                ]
+              }
+            ],
+            "logicalOperator": 0,
+            "childNode": {
+              "action": {
+                "type": "DmEmailRecipient_v1",
+                "notificationCustomizationJson": "{\"version\":\"1\",\"fromCustomization\":{\"fromType\":\"AUTOMATION\"}}",
+                "notificationCustomizationJsonSanitized": "{\"version\":\"1\",\"fromCustomization\":{\"fromType\":\"AUTOMATION\"}}",
+                "includeAttachments": true,
+                "includeComments": true,
+                "includeMessageOnly": false,
+                "readOnlyRecipients": false,
+                "recipients": [
+                  {
+                    "id": 147239951,
+                    "email": "bhaskar.das9476@gmail.com",
+                    "type": 2
+                  }
+                ]
+              },
+              "id": null,
+              "type": "DmGeneralActionNode"
+            }
+          },
+          {
+            "type": "DmConditionNode",
+            "id": 89,
+            "conditions": [
+              {
+                "columnID": 3009991204498,
+                "operator": 119,
+                "type": "oneValue_v1",
+                "values": [
+                  {
+                    "displayValue": "",
+                    "numericValue": null
+                  }
+                ]
+              }
+            ],
+            "logicalOperator": 0,
+            "childNode": {
+              "action": {
+                "type": "DmEmailRecipient_v1",
+                "notificationCustomizationJson": "{\"version\":\"1\",\"fromCustomization\":{\"fromType\":\"AUTOMATION\"}}",
+                "notificationCustomizationJsonSanitized": "{\"version\":\"1\",\"fromCustomization\":{\"fromType\":\"AUTOMATION\"}}",
+                "includeAttachments": true,
+                "includeComments": true,
+                "includeMessageOnly": false,
+                "readOnlyRecipients": false,
+                "recipients": [
+                  {
+                    "id": 147239951,
+                    "email": "bhaskar.das9476@gmail.com",
+                    "type": 2
+                  }
+                ]
+              },
+              "id": null,
+              "type": "DmGeneralActionNode"
+            }
+          }
+        ],
+        "elseNode": {
+          "type": "DmElseNode",
+          "id": 18,
+          "childNode": {
+            "action": {
+              "type": "DmEmailRecipient_v1",
+              "notificationCustomizationJson": "{\"version\":\"1\",\"fromCustomization\":{\"fromType\":\"AUTOMATION\"}}",
+              "includeAttachments": true,
+              "includeComments": true,
+              "includeMessageOnly": false,
+              "readOnlyRecipients": false,
+              "recipients": [
+                {
+                  "id": 147239951,
+                  "email": "bhaskar.das9476@gmail.com",
+                  "type": 2
+                }
+              ]
+            },
+            "id": 19,
+            "type": "DmGeneralActionNode"
+          }
+        }
+      },
+      "type": "DmRootNode",
+      "id": 1,
+      "trigger": {
+        "added": true,
+        "changeCriteriaList": [],
+        "changed": true,
+        "columnId": 0,
+        "daysAfter": 0,
+        "deleted": false,
+        "triggerTimestamp": 0,
+        "type": "DmRowChangeTrigger_v1"
+      }
+    }
+  }

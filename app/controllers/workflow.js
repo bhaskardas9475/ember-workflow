@@ -60,6 +60,67 @@ export default class WorkflowController extends Controller {
   @action
   addNode(id, event) {
     event.preventDefault();
-    console.log('aaa', id);
+    let data = this.fdata;
+    function addDummyConditionNodeById(node, targetId) {
+        // Check if the current node's childNode has the target ID
+        if (node.id === targetId) {
+            const dummyConditionNode = {
+                "type": "DmConditionNode",
+                "id": null,  // Dummy ID, set as needed
+                "conditions": [
+                    {
+                        "columnID": 3009991204498,
+                        "operator": 119,
+                        "type": "dummyType",
+                        "values": [
+                            {
+                                "displayValue": "Dummy Value",
+                                "numericValue": null
+                            }
+                        ]
+                    }
+                ],
+                "logicalOperator": 0
+            };
+    
+            // Ensure childNode and conditionNodes array exist
+            if (!node.childNode) {
+                node.childNode = { type: "DmIfElseNode", id: null, conditionNodes: [] };
+            } else if (!node.childNode.conditionNodes) {
+                node.childNode.conditionNodes = [];
+            }
+    
+            // Push the dummy condition node to conditionNodes array
+            node.childNode.conditionNodes.push(dummyConditionNode);
+            console.log("Dummy condition node added to node ID:", targetId);
+            return true; // Return true to indicate the node was found and modified
+        }
+    
+        // Recursively search within conditionNodes if they exist
+        if (node.conditionNodes) {
+            for (const childNode of node.conditionNodes) {
+                if (addDummyConditionNodeById(childNode, targetId)) {
+                    return true;
+                }
+            }
+        }
+    
+        // Recursively search within childNode if it exists
+        if (node.childNode) {
+            if (addDummyConditionNodeById(node.childNode, targetId)) {
+                return true;
+            }
+        }
+    
+        // Check the elseNode if it exists
+        if (node.elseNode && node.elseNode.childNode) {
+            return addDummyConditionNodeById(node.elseNode.childNode, targetId);
+        }
+    
+        return false; // Node with target ID not found in this branch
+    }
+    addDummyConditionNodeById(data.rootNode, id);
+
+    console.log("Updated data:", id,  data);
   }
 }

@@ -8,7 +8,159 @@
                 "includeAttachments": true,
                 "includeComments": true,
                 "includeMessageOnly": false,
+                "readOnlyRecipients": false,{
+  "id": 217162564,
+  "rootNode": {
+    "childNode": {
+      "action": {
+        "type": "DmEmailRecipient_v1",
+        "notificationCustomizationJson": "{\"version\":\"1\",\"fromCustomization\":{\"fromType\":\"AUTOMATION\"}}",
+        "includeAttachments": true,
+        "includeComments": true,
+        "includeMessageOnly": false,
+        "readOnlyRecipients": false,
+        "recipients": [
+          {
+            "id": 147239951,
+            "email": "bhaskar.das9476@gmail.com",
+            "type": 2
+          }
+        ]
+      },
+      "id": 2,
+      "type": "DmGeneralActionNode",
+      "childNode": {
+        "type": "DmIfElseNode",
+        "id": 8,
+        "conditionNodes": [
+          {
+            "type": "DmConditionNode",
+            "id": 9,
+            "conditions": [
+              {
+                "columnID": 3009991204497,
+                "operator": 119,
+                "type": "oneValue_v1",
+                "values": [
+                  {
+                    "displayValue": "",
+                    "numericValue": null
+                  }
+                ]
+              }
+            ],
+            "logicalOperator": 0,
+            "childNode": {
+              "action": {
+                "type": "DmEmailRecipient_v1",
+                "notificationCustomizationJson": "{\"version\":\"1\",\"fromCustomization\":{\"fromType\":\"AUTOMATION\"}}",
+                "includeAttachments": true,
+                "includeComments": true,
+                "includeMessageOnly": false,
                 "readOnlyRecipients": false,
+                "recipients": [
+                  {
+                    "id": 147239951,
+                    "email": "bhaskar.das9476@gmail.com",
+                    "type": 2
+                  }
+                ]
+              },
+              "id": 7,
+              "type": "DmGeneralActionNode"
+            }
+          },
+          {
+            "type": "DmConditionNode",
+            "id": 10,
+            "conditions": [
+              {
+                "columnID": 3009991204498,
+                "operator": 119,
+                "type": "oneValue_v1",
+                "values": [
+                  {
+                    "displayValue": "",
+                    "numericValue": null
+                  }
+                ]
+              }
+            ],
+            "logicalOperator": 0,
+            "childNode": {
+              "type": "DmIfElseNode",
+              "id": null,
+              "conditionNodes": [
+                {
+                  "type": "DmConditionNode",
+                  "id": null,
+                  "conditions": [
+                    {
+                      "columnID": 3009991204502,
+                      "operator": 117,
+                      "type": "zeroValue_v1"
+                    }
+                  ],
+                  "logicalOperator": 0,
+                  "childNode": {
+                    "action": {
+                      "type": "DmEmailRecipient_v1",
+                      "notificationCustomizationJson": "{\"version\":\"1\",\"fromCustomization\":{\"fromType\":\"AUTOMATION\"}}",
+                      "includeAttachments": true,
+                      "includeComments": true,
+                      "includeMessageOnly": false,
+                      "readOnlyRecipients": false,
+                      "recipients": [
+                        {
+                          "id": 147239951,
+                          "email": "bhaskar.das9476@gmail.com",
+                          "type": 2
+                        }
+                      ]
+                    },
+                    "id": 11,
+                    "type": "DmGeneralActionNode"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "type": "DmRootNode",
+    "id": 1,
+    "trigger": {
+      "added": true,
+      "changeCriteriaList": [],
+      "changed": true,
+      "columnId": 0,
+      "daysAfter": 0,
+      "deleted": false,
+      "triggerTimestamp": 0,
+      "type": "DmRowChangeTrigger_v1"
+    }
+  },
+  "sheetID": 3001648031368,
+  "name": "Untitled Workflow",
+  "enabled": true,
+  "sheetColumns": [
+    {
+      "columnID": 3009991204497,
+      "gridColumnDataType": 9
+    },
+    {
+      "columnID": 3009991204498,
+      "gridColumnDataType": 9
+    },
+    {
+      "columnID": 3009991204502,
+      "gridColumnDataType": 1
+    }
+  ],
+  "frequency": 1,
+  "optOutList": []
+}
                 "recipients": [
                     {
                         "id": 147239951,
